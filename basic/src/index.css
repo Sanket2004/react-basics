@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  padding: 0px 10px;
+}
+
+input,
+textarea {
+  border: none;
+  outline: 0;
+  background: rgba(128, 128, 128, 0.185);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  opacity: 70%;
+  transform: translateY(-5px);
+  transition: all ease-in-out 300ms;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+nav {
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+  transition: all;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-page > h1 {
+  margin: 0px 0px 20px 0px;
+}
+
+.menu-page > .menu-container{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.menu {
+  background-color: rgba(190, 190, 190, 0.616);
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 20rem;
+}
+
+.menu > img {
+  width: 100%;
+  border-radius: 10px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.menu .header {
+  font-size: 18px;
+}
+
+.menu .desc {
+  color: rgb(96, 96, 96);
+  font-size: 14px;
+  margin: 5px 0px;
+}
+
+.menu hr {
+  background-color: gray;
+  border: 0;
+  outline: 1px solid grey;
+}
+
+.menu .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu .footer .rating {
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+
+.menu .footer .rating::before {
+  content: "★★★★★"; /* Five stars */
+  color: black;
+  font-size: 20px;
+}
+
+.menu .footer .rating[data-rating="1"]::before {
+  content: "★☆☆☆☆";
+  color: green;
+}
+.menu .footer .rating[data-rating="2"]::before {
+  content: "★★☆☆☆";
+  color: green;
+}
+.menu .footer .rating[data-rating="3"]::before {
+  content: "★★★☆☆";
+  color: green;
+}
+.menu .footer .rating[data-rating="4"]::before {
+  content: "★★★★☆";
+  color: green;
+}
+.menu .footer .rating[data-rating="5"]::before {
+  content: "★★★★★";
+  color: green;
+}
+
+.menu .footer .price {
+  font-size: 25px;
+}
